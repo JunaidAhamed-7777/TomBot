@@ -2,7 +2,7 @@
   "name": "tombot",
   "version": "0.1.0",
   "private": true,
-  "description": "A Discord bot that reports its connection latency.",
+  "description": "A Discord bot that measures how long it takes to reply.",
   "type": "module",
   "engines": {
     "node": ">=24.17.0"

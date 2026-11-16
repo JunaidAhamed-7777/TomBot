@@ -1,6 +1,6 @@
 # TomBot
 
-TomBot was built for Hideout and works in any Discord server that installs it. Select TomBot from Discord’s mention list and send `@TomBot ping`. The bot replies with `Ping: 42ms`, using the measured round-trip time in milliseconds. [Hideout server invite](https://discord.gg/saul)
+TomBot was built for Hideout and works in any Discord server that installs it. Select TomBot from Discord’s mention list and send `@TomBot ping`. The bot posts `Ping: …ms` and edits that reply to show the elapsed time, for example `Ping: 42ms`. It measures from when Discord records your command to when Discord records TomBot’s reply. [Hideout server invite](https://discord.gg/saul) · [Discord message timestamps](https://docs.discord.com/developers/reference#snowflakes)
 
 ## Set up Discord
 
@@ -25,4 +25,4 @@ Open `.env` and set `DISCORD_TOKEN` to the token from the **Bot** page. Keep it 
 npm start
 ```
 
-Leave the process running. Once TomBot is online, send `@TomBot ping` in a server where it’s installed. The bot reports its Discord Gateway heartbeat round-trip time. Until the first heartbeat is acknowledged, it measures a Discord HTTP request. [Discord Gateway heartbeats](https://docs.discord.com/developers/events/gateway#sending-heartbeats)
+Leave the process running. Once TomBot is online, send `@TomBot ping` in a server where it’s installed.

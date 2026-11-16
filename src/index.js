@@ -22,7 +22,7 @@ client.on(Events.MessageCreate, async message => {
   try {
     await replyToPing(message);
   } catch (error) {
-    console.error('Could not reply to ping:', error.message);
+    console.error('Could not complete ping:', error.message);
   }
 });
 
